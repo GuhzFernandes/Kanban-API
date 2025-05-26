@@ -18,4 +18,44 @@ public class Board {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
+
+    public Board() {
+    }
+
+    public Board(String name, User user) {
+        this.name = name;
+        this.user = user;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<StatusColumn> getColumns() {
+        return columns;
+    }
+
+    public void setColumns(List<StatusColumn> columns) {
+        this.columns = columns;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
