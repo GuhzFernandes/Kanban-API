@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 
 classDiagram
 
@@ -34,5 +34,4 @@ classDiagram
     User "1" --> "*" Board
     Board "1" --> "3..*" List 
     List "1" --> "*" Card
-
-'''
+```
