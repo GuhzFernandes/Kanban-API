@@ -15,7 +15,7 @@ classDiagram
         -List[] lists
     }
 
-    class List {
+    class StatusColumn {
         -UUID id
         -String name
         -Card[] cards
@@ -32,6 +32,6 @@ classDiagram
     }
 
     User "1" --> "*" Board
-    Board "1" --> "3..*" List 
-    List "1" --> "*" Card
+    Board "1" --> "3..*" StatusColumn 
+    StatusColumn "1" --> "*" Card
 ```
